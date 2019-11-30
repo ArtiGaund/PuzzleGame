@@ -1,0 +1,150 @@
+table {
+  border :none;
+  border-collapse: collapse;
+  border-style: hidden;
+  text-align: center;
+  position: relative;
+  top: 60px;
+  left: 500px;
+}
+table td {
+  width: 120px;
+  height: 120px;
+  border: 7px solid black;
+}
+table tr:first-child td {
+  width: 120px;
+  height: 100px;
+  border-top: none;
+}
+table tr td:first-child {
+  width: 100px;
+  height: 100px;
+  border-left: 0;
+}
+table tr:last-child td {
+  width: 100px;
+  height: 100px;
+  border-bottom: 0;
+}
+table tr td:last-child {
+  width: 100px;
+  height: 100px;
+  border-right: 0;
+}
+.totalPage{
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+}
+.header{
+  text-align: center;
+  font-size: 70px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 9px;
+  padding: 0px;
+}
+.innerdiv{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+.innerImage{
+  position: relative;
+  height: 85px;
+  width: 85px;
+  top : 13%;
+}
+#tictactoeground{
+  position: relative;
+  opacity: ;
+  margin : 0px;
+  padding: 0px;
+  height:460px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+.messageBox{
+  margin: 0px;
+  font-family: Consolas;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  align-self: center;
+  width: 100%;
+  height:80px;
+  background-color: #AAAAAA;
+  font-size: 60px;
+  color: : blue ;
+}
+.message-button{
+  display: inline-block;
+  position: relative;
+  height: 66px;
+  line-height: 33px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0 15px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  border: 2px solid;
+  border-radius: 7px;
+  outline: 0;
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+}
+.message-button:before, .message-button:after {
+  content: '';
+  position: absolute;
+}
+.message-button:before {
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  z-index: -1;
+  border-radius: 9px;
+}
+.message-button:after {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 0;
+  border-radius: 7px;
+}
+.message-button.blue {
+  background: #3471b8;
+  border-color: #255184 #244f80 #1e4068;
+  background-image: -webkit-linear-gradient(top, #497fcc 0%, #3d72c8 50%, #3471b8 50%, #2365a0 100%);
+  background-image: -moz-linear-gradient(top, #497fcc 0%, #3d72c8 50%, #3471b8 50%, #2365a0 100%);
+  background-image: -o-linear-gradient(top, #497fcc 0%, #3d72c8 50%, #3471b8 50%, #2365a0 100%);
+  background-image: linear-gradient(to bottom, #497fcc 0%, #3d72c8 50%, #3471b8 50%, #2365a0 100%);
+}
+
+.message-button.blue:before {
+  background: #4c8ad3;
+  background-image: -webkit-linear-gradient(top, #29609f, #5995da);
+  background-image: -moz-linear-gradient(top, #29609f, #5995da);
+  background-image: -o-linear-gradient(top, #29609f, #5995da);
+  background-image: linear-gradient(to bottom, #29609f, #5995da);
+}
+
+.message-button.blue:active {
+  background: #3d79c8;
+  background-image: -webkit-linear-gradient(top, #216298 0%, #3774c4 60%, #3d79c8 100%);
+  background-image: -moz-linear-gradient(top, #216298 0%, #3774c4 60%, #3d79c8 100%);
+  background-image: -o-linear-gradient(top, #216298 0%, #3774c4 60%, #3d79c8 100%);
+  background-image: linear-gradient(to bottom, #216298 0%, #3774c4 60%, #3d79c8 100%);
+}
+
+.message-button.blue:active:after {
+  border-color: #3d79c8;
+}
